@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BTCZ Exchanges Race</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>	
+    <script src="tracker.js"></script>
+    <style>
+        .exLink{
+            color:black;
+        }
+    </style>
+</head>
+    <body onLoad="start()" style="padding-top:4rem">
+        <div class="container">
+            <h1 class="text-center">BTCZ Exchanges Race</h1>
+            <div class="row">
+                <p>New year, new exchanges! This page tracks the progress of funding, we need 5 BTC-worth of BTCZ for either option, first one to reach 2.5 BTC wins and gets all.
+                <br>BTCZ/BTC exchange rate is an estimate based on the weighted average by Coinmarketcap. The values on this page are automatically updated every 5 minutes.</p>
+            </div>
+            <div class="row">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Exchange</th>
+                        <th scope="col">Donation address</th>
+                        <th scope="col" colspan="3">Balance</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row"><a href="https://btc-alpha.com/exchange/" target="_blank" class="exLink">BTC-Alpha</a> + <a href="https://openledger.io" target="_blank" class="exLink">OpenLedger</a></th>
+                        <td>t1L2h7WyVsxEvbw1acefwXWBQWYReQnN7MF</td>
+                        <td id="btczBalance1">0</td>
+                        <td id="btczBalance1_toBtc">0</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="align-middle">
+                            <div class="progress">
+                                <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td id="progressPercent1">0%</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="https://www.cryptopia.co.nz/" target="_blank" class="exLink">Cryptopia.co.nz</a></th>
+                        <td>t1QPbt39fb4pzWXkNSM3qo6dWiL4ii42s48</td>
+                        <td id="btczBalance2">0</td>
+                        <td id="btczBalance2_toBtc">0</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="align-middle">
+                            <div class="progress">
+                                <div id="progressBar2" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </td>
+                        <td id="progressPercent2">0%</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            <p class="text-center">made by <a href="https://github.com/hodler95" target="_blank">hodler95</a></p>
+        </div>
+</body>
+</html>
