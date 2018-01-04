@@ -1,15 +1,21 @@
 var BtczBalance1 = 0;
 var BtczBalance2 = 0;
 var BtczValue = 0;
+var startDate = new Date("2018-01-03T19:00:00Z");
 
 function updatePage(){
+    var currentDate = new Date().getTime();
+    var hours = Number(Math.round((currentDate-startDate)/3600000));
+    var totalDonations = Number(Math.round(BtczBalance1+BtczBalance2));
+    var hourlyAverage = Number(Math.round(totalDonations/hours));
     var BtczBalance1_toBtc = (BtczBalance1*BtczValue);
     var BtczBalance2_toBtc = (BtczBalance2*BtczValue);
+    document.getElementById('statsTxt').innerHTML = "<b>" + totalDonations + " BTCZ</b> raised in <b>" + hours + " hours</b>, average: <b>" + hourlyAverage + " BTCZ/h</b>";
     document.getElementById('btczBalance1').innerHTML = BtczBalance1.toFixed(0) + " BTCZ";
     document.getElementById('btczBalance2').innerHTML = BtczBalance2.toFixed(0) + " BTCZ";
     document.getElementById('btczBalance1_toBtc').innerHTML = "<b>" + BtczBalance1_toBtc.toFixed(8) + " BTC</b>";
     document.getElementById('btczBalance2_toBtc').innerHTML = "<b>" + BtczBalance2_toBtc.toFixed(8) + " BTC</b>";
-    document.getElementById('progressBar').style.width = (BtczBalance1_toBtc/0.025).toFixed(2) + "%";
+    document.getElementById('progressBar1').style.width = (BtczBalance1_toBtc/0.025).toFixed(2) + "%";
     document.getElementById('progressPercent1').innerHTML = (BtczBalance1_toBtc/0.025).toFixed(0) + "%";
     document.getElementById('progressBar2').style.width = (BtczBalance2_toBtc/0.025).toFixed(2) + "%";
     document.getElementById('progressPercent2').innerHTML = (BtczBalance2_toBtc/0.025).toFixed(0) + "%";
