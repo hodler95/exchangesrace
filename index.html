@@ -15,6 +15,9 @@
             .miningImg{
                 width: 24px;
             }
+            .totalText{
+                font-size: 1.2em;
+            }
         </style>
     </head>
     <body onLoad="start()" style="padding-top:4rem">
@@ -33,13 +36,15 @@
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Exchange</th>
-                            <th scope="col">Donation address</th>
+                            <th scope="col">Currency</th>
+                            <th scope="col">Address</th>
                             <th scope="col" colspan="3">Balance</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row"><a href="https://btc-alpha.com/exchange/" target="_blank" class="exLink">BTC-Alpha</a> + <a href="https://openledger.io" target="_blank" class="exLink">OpenLedger</a> + <a href="https://www.coinexchange.io/" target="_blank" class="exLink">Coinexchange.io</a></th>
+                            <th scope="row" rowspan="5"><a href="https://btc-alpha.com/exchange/" target="_blank" class="exLink">BTC-Alpha</a> + <br><a href="https://openledger.io" target="_blank" class="exLink">OpenLedger</a> + <br><a href="https://www.coinexchange.io/" target="_blank" class="exLink">Coinexchange.io</a></th>
+                            <td>BTCZ</td>
                             <td>t1L2h7WyVsxEvbw1acefwXWBQWYReQnN7MF</td>
                             <td id="btczBalance1">0</td>
                             <td id="btczBalance1_toBtc">0</td>
@@ -47,97 +52,85 @@
                         </tr>
 						
 					    <tr>
-						    <td></td>
+                            <td>BTC</td>
                             <td>14deH7yqwmV8gcPHzLwUXmRSnZ1gQYK1Ka</td>
                             <td id="btcBalance1">0</td>
                             <td id="btcBalance1_toBtc">0</td>
                             <td></td>
                         </tr>
 					    <tr>
-						    <td></td>
+                            <td>LTC</td>
                             <td>LPprE3sC5oTjpEZM5AcjTKzZdRf7sLgSGo</td>
                             <td id="ltcBalance1">0</td>
                             <td id="ltcBalance1_toBtc">0</td>
                             <td></td>
                         </tr>
 					    <tr>
-						    <td></td>
+                            <td>ETH</td>
                             <td>0xBAd0dC6003D3F6a7222c0A1Cf6228b364BB011C9</td>
                             <td id="ethBalance1">0</td>
                             <td id="ethBalance1_toBtc">0</td>
                             <td></td>
                         </tr>						
 					    <tr>
-						    <td></td>
+                            <td>ZEC</td>
                             <td>t1SCNiZ2qNv3Y97CMLgpkFFzrPgeAsZzmrb</td>
                             <td id="zecBalance1">0</td>
                             <td id="zecBalance1_toBtc">0</td>
                             <td></td>
-                        </tr>						
-					    <tr>
-						    <td></td>
-                            <td></td>
-                            <td><b>Total BTC</b></td>
-                            <td id="totalBalance1">0</td>
-                            <td></td>
-                        </tr>						
-						
+                        </tr>
                         <tr>
                             <td colspan="4" class="align-middle">
                                 <div class="progress">
                                     <div id="progressBar1" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </td>
+                            <td id="totalBalance1" class="totalText">0</td>
                             <td id="progressPercent1">0%</td>
                         </tr>
                         <tr>
-                            <th scope="row"><a href="https://www.cryptopia.co.nz/" target="_blank" class="exLink">Cryptopia.co.nz</a></th>
+                            <th scope="row" rowspan="5"><a href="https://www.cryptopia.co.nz/" target="_blank" class="exLink">Cryptopia.co.nz</a></th>
+                            <td>BTCZ</td>
                             <td>t1QPbt39fb4pzWXkNSM3qo6dWiL4ii42s48</td>
                             <td id="btczBalance2">0</td>
                             <td id="btczBalance2_toBtc">0</td>
                             <td><a href="http://pool.bitcoinzguiding.ovh/workers/t1QPbt39fb4pzWXkNSM3qo6dWiL4ii42s48" target="_blank"><img class="miningImg" src="mining.png"></a></td>
                         </tr>
 					    <tr>
-						    <td></td>
+                            <td>BTC</td>
                             <td>16WnYgKonXrkfQ5KcHzar4fM9fnU4acxJd</td>
                             <td id="btcBalance2">0</td>
                             <td id="btcBalance2_toBtc">0</td>
                             <td></td>
                         </tr>
 					    <tr>
-						    <td></td>
+                            <td>LTC</td>
                             <td>LLn9pvryRDzuCS2anyrjg6JJ4k3YdsUcvS</td>
                             <td id="ltcBalance2">0</td>
                             <td id="ltcBalance2_toBtc">0</td>
                             <td></td>
                         </tr>
 					    <tr>
-						    <td></td>
+                            <td>ETH</td>
                             <td>0xC66B6075293051faFDC40f18Bf1C265c353DAaA8</td>
                             <td id="ethBalance2">0</td>
                             <td id="ethBalance2_toBtc">0</td>
                             <td></td>
                         </tr>						
 					    <tr>
-						    <td></td>
+                            <td>ZEC</td>
                             <td>t1WkCDwJ3YKvYhewe84DbGRnQhnB7EvexxN</td>
                             <td id="zecBalance2">0</td>
                             <td id="zecBalance2_toBtc">0</td>
                             <td></td>
-                        </tr>
-					    <tr>
-						    <td></td>
-                            <td></td>
-                            <td><b>Total BTC</b></td>
-                            <td id="totalBalance2">0</td>
-                            <td></td>
-                        </tr>						
+                        </tr>			
                         <tr>
                             <td colspan="4" class="align-middle">
                                 <div class="progress">
                                     <div id="progressBar2" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </td>
+                            <td id="totalBalance2" class="totalText">0</td>
                             <td id="progressPercent2">0%</td>
                         </tr>
                     </tbody>
@@ -145,7 +138,7 @@
             </div>
             <p id="statsTxt" class="text-center"></p>
 
-            <p class="text-center">made by <a href="https://github.com/hodler95" target="_blank">hodler95</a></p>
+            <p class="text-center">made by <a href="https://github.com/hodler95" target="_blank">hodler95 & cryptorex</a></p>
         </div>
     </body>
 </html>
