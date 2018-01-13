@@ -51,7 +51,7 @@ function updatePage(){
 	document.getElementById('totalBalance1').innerHTML = "<b>" + TotalBalance1.toFixed(6) + " BTC</b>";
 	
 	document.getElementById('progressBar1').style.width = (TotalBalance1/0.025).toFixed(2) + "%";
-    document.getElementById('progressPercent1').innerHTML = (TotalBalance1/0.025).toFixed(2) + "%";
+    document.getElementById('progressPercent1').innerHTML = (TotalBalance1/0.025).toFixed(1) + "%";
 	
 	
 	
@@ -79,7 +79,7 @@ function updatePage(){
 	document.getElementById('totalBalance2').innerHTML = "<b>" + TotalBalance2.toFixed(6) + " BTC</b>";
 	
 	document.getElementById('progressBar2').style.width = (TotalBalance2/0.025).toFixed(2) + "%";
-    document.getElementById('progressPercent2').innerHTML = (TotalBalance2/0.025).toFixed(2) + "%";
+    document.getElementById('progressPercent2').innerHTML = (TotalBalance2/0.025).toFixed(1) + "%";
 
 }
 
