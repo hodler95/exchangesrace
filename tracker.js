@@ -30,25 +30,25 @@ function updatePage(){
 	
 	var BtczBalance1_toBtc = (BtczBalance1*BtczValue);
 	document.getElementById('btczBalance1').innerHTML = BtczBalance1.toFixed(0) + " BTCZ";
-	document.getElementById('btczBalance1_toBtc').innerHTML = "<b>" + BtczBalance1_toBtc.toFixed(8) + " BTC</b>";
+	document.getElementById('btczBalance1_toBtc').innerHTML = "<b>" + BtczBalance1_toBtc.toFixed(6) + " BTC</b>";
 	
 	document.getElementById('btcBalance1').innerHTML = BtcBalance1.toFixed(6) + " BTC";
-    document.getElementById('btcBalance1_toBtc').innerHTML = "<b>" + BtcBalance1.toFixed(8) + " BTC</b>";
+    document.getElementById('btcBalance1_toBtc').innerHTML = "<b>" + BtcBalance1.toFixed(6) + " BTC</b>";
 
     var LtcBalance1_toBtc = (LtcBalance1*LtcValue);	
     document.getElementById('ltcBalance1').innerHTML = LtcBalance1.toFixed(6) + " LTC";
-    document.getElementById('ltcBalance1_toBtc').innerHTML = "<b>" + LtcBalance1_toBtc.toFixed(8) + " BTC</b>";
+    document.getElementById('ltcBalance1_toBtc').innerHTML = "<b>" + LtcBalance1_toBtc.toFixed(6) + " BTC</b>";
 
     var EthBalance1_toBtc = (EthBalance1*EthValue);	
     document.getElementById('ethBalance1').innerHTML = EthBalance1.toFixed(6) + " ETH";
-    document.getElementById('ethBalance1_toBtc').innerHTML = "<b>" + EthBalance1_toBtc.toFixed(8) + " BTC</b>";			
+    document.getElementById('ethBalance1_toBtc').innerHTML = "<b>" + EthBalance1_toBtc.toFixed(6) + " BTC</b>";			
 	
     var ZecBalance1_toBtc = (ZecBalance1*ZecValue);	
     document.getElementById('zecBalance1').innerHTML = ZecBalance1.toFixed(6) + " ZEC";
-    document.getElementById('zecBalance1_toBtc').innerHTML = "<b>" + ZecBalance1_toBtc.toFixed(8) + " BTC</b>";	
+    document.getElementById('zecBalance1_toBtc').innerHTML = "<b>" + ZecBalance1_toBtc.toFixed(6) + " BTC</b>";	
 
 	var TotalBalance1 = BtczBalance1_toBtc + BtcBalance1 + LtcBalance1_toBtc + EthBalance1_toBtc + ZecBalance1_toBtc;
-	document.getElementById('totalBalance1').innerHTML = "<b>" + TotalBalance1.toFixed(8) + " BTC</b>";
+	document.getElementById('totalBalance1').innerHTML = "<b>" + TotalBalance1.toFixed(6) + " BTC</b>";
 	
 	document.getElementById('progressBar1').style.width = (TotalBalance1/0.025).toFixed(2) + "%";
     document.getElementById('progressPercent1').innerHTML = (TotalBalance1/0.025).toFixed(2) + "%";
@@ -58,25 +58,25 @@ function updatePage(){
 	
     var BtczBalance2_toBtc = (BtczBalance2*BtczValue);
     document.getElementById('btczBalance2').innerHTML = BtczBalance2.toFixed(0) + " BTCZ";
-    document.getElementById('btczBalance2_toBtc').innerHTML = "<b>" + BtczBalance2_toBtc.toFixed(8) + " BTC</b>";
+    document.getElementById('btczBalance2_toBtc').innerHTML = "<b>" + BtczBalance2_toBtc.toFixed(6) + " BTC</b>";
 	
 	document.getElementById('btcBalance2').innerHTML = BtcBalance2.toFixed(6) + " BTC";
-    document.getElementById('btcBalance2_toBtc').innerHTML = "<b>" + BtcBalance2.toFixed(8) + " BTC</b>";
+    document.getElementById('btcBalance2_toBtc').innerHTML = "<b>" + BtcBalance2.toFixed(6) + " BTC</b>";
 
     var LtcBalance2_toBtc = (LtcBalance2*LtcValue);	
     document.getElementById('ltcBalance2').innerHTML = LtcBalance2.toFixed(6) + " LTC";
-    document.getElementById('ltcBalance2_toBtc').innerHTML = "<b>" + LtcBalance2_toBtc.toFixed(8) + " BTC</b>";
+    document.getElementById('ltcBalance2_toBtc').innerHTML = "<b>" + LtcBalance2_toBtc.toFixed(6) + " BTC</b>";
 
     var EthBalance2_toBtc = (EthBalance2*EthValue);	
     document.getElementById('ethBalance2').innerHTML = EthBalance2.toFixed(6) + " ETH";
-    document.getElementById('ethBalance2_toBtc').innerHTML = "<b>" + EthBalance2_toBtc.toFixed(8) + " BTC</b>";			
+    document.getElementById('ethBalance2_toBtc').innerHTML = "<b>" + EthBalance2_toBtc.toFixed(6) + " BTC</b>";			
 	
     var ZecBalance2_toBtc = (ZecBalance2*ZecValue);	
     document.getElementById('zecBalance2').innerHTML = ZecBalance2.toFixed(6) + " ZEC";
-    document.getElementById('zecBalance2_toBtc').innerHTML = "<b>" + ZecBalance2_toBtc.toFixed(8) + " BTC</b>";
+    document.getElementById('zecBalance2_toBtc').innerHTML = "<b>" + ZecBalance2_toBtc.toFixed(6) + " BTC</b>";
 	
 	var TotalBalance2 = BtczBalance2_toBtc + BtcBalance2 + LtcBalance2_toBtc + EthBalance2_toBtc + ZecBalance2_toBtc;	
-	document.getElementById('totalBalance2').innerHTML = "<b>" + TotalBalance2.toFixed(8) + " BTC</b>";
+	document.getElementById('totalBalance2').innerHTML = "<b>" + TotalBalance2.toFixed(6) + " BTC</b>";
 	
 	document.getElementById('progressBar2').style.width = (TotalBalance2/0.025).toFixed(2) + "%";
     document.getElementById('progressPercent2').innerHTML = (TotalBalance2/0.025).toFixed(2) + "%";
