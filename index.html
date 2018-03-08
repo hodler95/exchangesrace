@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>BTCZ Exchanges Race</title>
+        <title>Binance Donation Tracker</title>
+		<link rel="icon" href="favicon.png">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -20,16 +21,14 @@
             }
         </style>
     </head>
-    <body onLoad="start()" style="padding-top:4rem">
+    <body onLoad="start()" style="padding-top:2rem">
         <div class="container">
-            <h1 class="text-center">BTCZ Exchanges Race</h1>
+		    <div class="text-center"><img class="text-center" src="logo.png" style="width: 50%;"></div>
+            <h1 class="text-center">Binance Donation Tracker</h1>
             <div class="row">
-                <p>This page tracks the progress of funding, we need 5 BTC-worth of BTCZ for either option, first one to reach 2.5 BTC wins and gets all.
+                <p>This page tracks the progress of funding for Binance.  The listing fee can be anywhere from 10 - 25 BTC due to the voting process involved (voting with BNB token).  This tracker is set to the max of 25 BTC.<br>
                 <br>BTCZ/BTC exchange rate is an estimate based on the weighted average by Coinmarketcap. The values on this page are automatically updated every 5 minutes.</p>
             </div>
-            <div class="row">
-                <p> <strong>Update 02/07/2018:</strong> In accordance with the community vote <a href="https://doodle.com/poll/t2bpenn288s6ndna" target="_blank">results</a> the race is now changed to be OpenLedger + Coinexchange.io (5 BTC) vs Coinrail (5 BTC) </p>
-            </div>  
             <div class="row">
               <table class="table table-bordered">
                     <thead class="thead-dark">
@@ -42,12 +41,12 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" rowspan="5"><a href="https://openledger.io" target="_blank" class="exLink">OpenLedger</a> + <br><a href="https://www.coinexchange.io/" target="_blank" class="exLink">Coinexchange.io</a></th>
+                            <th scope="row" rowspan="5"><a href="https://www.binance.com/" target="_blank" class="exLink">Binance</a></th>
                             <td>BTCZ</td>
                             <td>t1L2h7WyVsxEvbw1acefwXWBQWYReQnN7MF</td>
                             <td id="btczBalance1">0</td>
                             <td id="btczBalance1_toBtc">0</td>
-                            <td><a href="http://pool.bitcoinzguiding.ovh/workers/t1L2h7WyVsxEvbw1acefwXWBQWYReQnN7MF" target="_blank"><img class="miningImg" src="mining.png"></a></td>
+                            <td><a href="https://equipool.1ds.us/workers/t1L2h7WyVsxEvbw1acefwXWBQWYReQnN7MF" target="_blank"><img class="miningImg" src="mining.png"></a></td>
                         </tr>
 						
 					    <tr>
@@ -86,51 +85,6 @@
                             </td>
                             <td id="totalBalance1" class="totalText">0</td>
                             <td id="progressPercent1">0%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" rowspan="5"><a href="https://coinrail.co.kr/" target="_blank" class="exLink">Coinrail</a></th>
-                            <td>BTCZ</td>
-                            <td>t1QPbt39fb4pzWXkNSM3qo6dWiL4ii42s48</td>
-                            <td id="btczBalance2">0</td>
-                            <td id="btczBalance2_toBtc">0</td>
-                            <td><a href="http://pool.bitcoinzguiding.ovh/workers/t1QPbt39fb4pzWXkNSM3qo6dWiL4ii42s48" target="_blank"><img class="miningImg" src="mining.png"></a></td>
-                        </tr>
-					    <tr>
-                            <td>BTC</td>
-                            <td>16WnYgKonXrkfQ5KcHzar4fM9fnU4acxJd</td>
-                            <td id="btcBalance2">0</td>
-                            <td id="btcBalance2_toBtc">0</td>
-                            <td></td>
-                        </tr>
-					    <tr>
-                            <td>LTC</td>
-                            <td>LLn9pvryRDzuCS2anyrjg6JJ4k3YdsUcvS</td>
-                            <td id="ltcBalance2">0</td>
-                            <td id="ltcBalance2_toBtc">0</td>
-                            <td></td>
-                        </tr>
-					    <tr>
-                            <td>ETH</td>
-                            <td>0xC66B6075293051faFDC40f18Bf1C265c353DAaA8</td>
-                            <td id="ethBalance2">0</td>
-                            <td id="ethBalance2_toBtc">0</td>
-                            <td></td>
-                        </tr>						
-					    <tr>
-                            <td>ZEC</td>
-                            <td>t1WkCDwJ3YKvYhewe84DbGRnQhnB7EvexxN</td>
-                            <td id="zecBalance2">0</td>
-                            <td id="zecBalance2_toBtc">0</td>
-                            <td></td>
-                        </tr>			
-                        <tr>
-                            <td colspan="4" class="align-middle">
-                                <div class="progress">
-                                    <div id="progressBar2" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </td>
-                            <td id="totalBalance2" class="totalText">0</td>
-                            <td id="progressPercent2">0%</td>
                         </tr>
                     </tbody>
                 </table>

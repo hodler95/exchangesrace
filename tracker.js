@@ -50,8 +50,8 @@ function updatePage(){
 	var TotalBalance1 = BtczBalance1_toBtc + BtcBalance1 + LtcBalance1_toBtc + EthBalance1_toBtc + ZecBalance1_toBtc;
 	document.getElementById('totalBalance1').innerHTML = "<b>" + TotalBalance1.toFixed(6) + " BTC</b>";
 	
-	document.getElementById('progressBar1').style.width = (TotalBalance1/0.025).toFixed(2) + "%";
-    document.getElementById('progressPercent1').innerHTML = (TotalBalance1/0.025).toFixed(1) + "%";
+	document.getElementById('progressBar1').style.width = (TotalBalance1/0.25).toFixed(2) + "%";
+    document.getElementById('progressPercent1').innerHTML = (TotalBalance1/0.25).toFixed(1) + "%";
 	
 	
 	
